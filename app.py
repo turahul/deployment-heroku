@@ -11,7 +11,7 @@ cols = ['Car_Name', 'Year', 'Kms_Driven', 'Fuel_Type', 'Seller_Type', 'Transmiss
 
 @app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("carweb.html")
 
 @app.route('/predict',methods=['POST'])
 def predict():
