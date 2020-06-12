@@ -18,7 +18,7 @@ def predict():
     int_features = [x for x in request.form.values()]
     final = np.array(int_features)
     data_unseen = pd.DataFrame([final], columns = cols)
-    prediction = predict_model(model, data=data_unseen, round = 0)
+    prediction = predict_model(model, data=data_unseen, round = 2)
     prediction = prediction.Label[0]
     return render_template('carweb.html',pred='Expected Price will be {} Lakhs'.format(prediction))
 
