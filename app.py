@@ -6,7 +6,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('carprice_pred')
+model = load_model('usedcarprice_pred')
 cols = ['Car_Name', 'Year', 'Kms_Driven', 'Fuel_Type', 'Seller_Type', 'Transmission', 'Owner' , 'Present_Price']
 
 @app.route('/')
